@@ -9,11 +9,7 @@ on:
        - master
        - develop  
 
-name: "Build & Release"  
-
-defaults:
-  run:
-    working-directory: ClientSide-APM-Major-1/client_apm
+name: "Build & Release" 
 
 jobs:
   build:
