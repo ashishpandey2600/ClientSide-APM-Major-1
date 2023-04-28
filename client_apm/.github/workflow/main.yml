@@ -23,7 +23,7 @@ jobs:
       with:
        flutter-version: '3.7.11'
     - run: flutter pub get
-    - working-directory: client_apm
+    - working-directory: ClientSide-APM-Major-1/client_apm
     - run: flutter test
     - run: flutter build apk --debug --split-per-abi
     - name: Push to Releases
