@@ -13,7 +13,7 @@ name: "Build & Release"
 
 defaults:
   run:
-    working-directory: ../client_apm
+    working-directory: client_apm
 
 jobs:
   build:
