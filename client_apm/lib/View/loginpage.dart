@@ -19,26 +19,37 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
           child: Column(
         children: [
-          TextField(
-            controller: emailController,
-            keyboardType: TextInputType.emailAddress,
-            decoration: const InputDecoration(
-              prefixIcon: Icon(Icons.lock),
-              border: InputBorder.none,
-              labelText: "email",
+          SizedBox(
+            height: 70,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: TextField(
+              controller: emailController,
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.lock),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+                labelText: "email",
+              ),
             ),
           ),
           const SizedBox(
             height: 10,
           ),
-          TextField(
-            controller: passwordController,
-            keyboardType: TextInputType.visiblePassword,
-            obscureText: true,
-            decoration: const InputDecoration(
-              prefixIcon: Icon(Icons.lock),
-              border: InputBorder.none,
-              labelText: "email",
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: TextField(
+              controller: passwordController,
+              keyboardType: TextInputType.visiblePassword,
+              obscureText: true,
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.lock),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+                labelText: "password",
+              ),
             ),
           ),
           const SizedBox(

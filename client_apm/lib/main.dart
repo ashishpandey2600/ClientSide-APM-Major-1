@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'View/homepage.dart';
 
-void main() {
+import 'View/loginpage.dart';
+
+Future<void> main() async {
+  
+
   runApp(const MyApp());
 }
 
@@ -17,7 +20,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
